@@ -33,7 +33,7 @@ public class PageConfig {
             setPlaywright(playwright);
 
             BrowserType browserType = getBrowserType(playwright, browser);
-            Browser browserInstance = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false)); // set to true for headless mode
+            Browser browserInstance = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true)); // set to true for headless mode
             setBrowser(browserInstance);
 
             NewContextOptions contextOptions = new Browser.NewContextOptions()
